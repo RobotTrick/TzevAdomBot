@@ -1,7 +1,17 @@
-<img src="https://telegra.ph/file/c72911ee6b18228f0e57b.png" width="100" height="100">
+<div dir="rtl">
 
-# Tzeva Adom - Telegram Bot
+<img src="https://telegra.ph/file/516e399882d1f74585264.png" width="100" height="100" alg/>
 
-This is a telegram bot that sends location-based Tzeva Adom alerts. The information is obtained from Pikud H'aoref website.
+# צבע אדום - בוט טלגרם
 
-* We will soon add running instructions and more details.
+בוט צבע אדום בטלגרם, המתריע בזמן אמת על אזעקות מבוססות מיקום.
+
+
+
+* [מעבר לבוט](https://t.me/TzevAdomBot)
+> 
+* [ערוץ התראות כללי](https://t.me/TzevAdomChannel)
+> 
+* [רשימת ערים/איזורים](https://m100achuz.ml/areas.html)
+
+</div>
