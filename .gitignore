@@ -3,3 +3,4 @@ config.ini
 tsevaAdom.sqlite
 *.session
 venv
+*.pyc
