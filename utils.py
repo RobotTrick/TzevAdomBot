@@ -71,8 +71,8 @@ class Msg:
         """ החזרת הודעת "רשימת מנויים" על פי ליסט של איזורים """
         _len = len(subs)
         str_subs = "\n".join(subs)
-        txt = f"**🔔 סך כל האזורים שהנך רשום אליהם: {_len}.**" \
-              f"\n```{str_subs}```.\n\nלהסרת אזור, השתמשו בפקודת /remove."
+        txt = f"**🔔 סך כל האזורים שהנך רשום אליהם:{_len}.**" \
+              f"\n\n```{str_subs}```\n\nלהסרת אזור, השתמשו בפקודת /remove."
         return txt
 
     @property
