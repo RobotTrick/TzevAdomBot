@@ -22,4 +22,4 @@ def handler(list_alerts):
             area_obj = Area.get(name=area)  # קבלת האובייקט מהמסד נתונים
             if area_obj:
                 for user in area_obj.get_users():  # לולאה על המנויים לאזור זה
-                    _send(user.uid, area, alert["time"])  # שליחת ההתראה
+                    _send(user, area, alert["time"])  # שליחת ההתראה
