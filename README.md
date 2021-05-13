@@ -14,4 +14,7 @@
 > 
 * [רשימת ערים/איזורים](https://m100achuz.ml/areas.html)
 
+> © נוצר על ידי [David Lev](https://linktr.ee/davidlev) && [Yehuda-By](https://t.me/m100achuzbots) מצוות [רובוטריק](https://t.me/robottrick).
+
+
 </div>
