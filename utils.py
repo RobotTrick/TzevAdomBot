@@ -20,7 +20,7 @@ class Area(db.Entity):
         return ids  # החזרת רשימת מנויים לפי אזור
 
 
-db.bind(provider='sqlite', filename='tsevaAdom.sqlite', create_db=True)
+db.bind(provider='sqlite', filename='tzevAdom.sqlite', create_db=True)
 db.generate_mapping(create_tables=True)
 
 
@@ -38,12 +38,12 @@ class Msg:
     none_subscribes = "נראה שעדיין לא נרשמת לאזור כלשהוא. תוכל להרשם לאזורך על ידי פקודת /add."
     not_subscribe = "אינך רשום לאזור זה."
     success_remove = "אזור זה הוסר מרשימת האזורים שלך."
-    repo_url = "https://github.com/david-lev/TsevaAdomBot"
-    bottun_link = "💬 קוד המקור של הבוט"
+    repo_url = "https://github.com/RobotTrick/TzevAdomBot"
+    button_link = "💬 קוד המקור של הבוט"
 
     help = "להלן הפקודות הנתמכות בבוט:\n\n" \
            "#️⃣ /add:\n" \
-           "משתמש להוספת אזור/עיר לרשימת האזורים שלך. השימוש בפקודה מתבצע באמצעות שליחת הפקודה יחד עם שם האזור. " \
+           "משמש להוספת אזור/עיר לרשימת האזורים שלך. השימוש בפקודה מתבצע באמצעות שליחת הפקודה יחד עם שם האזור. " \
            "לדוגמה:\n" \
            "`/add ירושלים - מזרח, מרכז ומערב`\n" \
            f"\nשימו לב שהבוט מקבל אך ורק שמות מדויקים, מתוך הרשימה המופיעה [כאן]({_areas_url}). אנחנו ממליצים להכנס " \
@@ -57,8 +57,11 @@ class Msg:
            "[Yeuda-By](t.me/m100achuzBots) && [David Lev](t.me/davidlev) מצוות " \
            "[רובוטריק](https://t.me/RobotTrick)."
 
+    start = """**ברוכים הבאים לרובוט התראות צבע אדום!**
 
-    start = "hello"
+רובוט זה ישלח לכם התראה בכל פעם שנשמעת אזעקה באיזורים או בערים שאליהם נרשמתם.
+
+להסבר שימוש ברובוט שלחו /help."""
 
     def list_subscribes(subs: list) -> str:
         """ החזרת הודעת "רשימת מנויים" על פי ליסט של איזורים """

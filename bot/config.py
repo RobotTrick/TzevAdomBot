@@ -108,6 +108,6 @@ def _help(_, msg: Message):
         Msg.help,
         # disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-            Msg.bottun_link, url=Msg.repo_url
+            Msg.button_link, url=Msg.repo_url
         )]])
     )  # החזרת הודעת עזרה

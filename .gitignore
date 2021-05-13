@@ -1,6 +1,6 @@
 config.ini
 .idea
-tsevaAdom.sqlite
+tzevAdom.sqlite
 *.session
 venv
 *.pyc
