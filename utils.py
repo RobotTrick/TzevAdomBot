@@ -33,8 +33,8 @@ class Msg:
     area_not_found = f"לא נמצאה עיר/אזור. תוכלו למצוא את רשימת הערים [כאן]({_areas_url})."
     success_config = "נרשמת בהצלחה לקבלת התראות צבע אדום לאזור: **{}**. בשורות טובות."
     _info_url = "https://www.oref.org.il/12487-15894-he/Pakar.aspx"  # הוראות פיקוד העורף
-    alarms = "🛑 אזעקת צבע אדום כעת באזורך: **{}**. \n\nיש לכם **{}** כדי להגיע למרחב המוגן.\nלעוד מידע הכנסו ל[אתר " \
-             "פיקוד העורף]({}). "
+    alarms = "🛑 אזעקת צבע אדום כעת באזורך: **{}**. \n\nיש לכם **{}** כדי להגיע למרחב המוגן.\nלמידע  הכנסו לאתר " \
+             f"פיקוד העורף]({_info_url}). "
     none_subscribes = "נראה שעדיין לא נרשמת לאזור כלשהוא. תוכל להרשם לאזורך על ידי פקודת /add."
     not_subscribe = "אינך רשום לאזור זה."
     success_remove = "אזור זה הוסר מרשימת האזורים שלך."

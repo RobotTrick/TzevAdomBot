@@ -9,7 +9,7 @@ def _send(uid: int, area=None, time=None):
         try:
             app.send_message(
                 uid,
-                Msg.alarms.format(area, time, Msg.info_url)
+                Msg.alarms.format(area, time)
             )  # שליחת התראה למשתמש
         except:
             pass
