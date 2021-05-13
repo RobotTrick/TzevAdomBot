@@ -38,6 +38,8 @@ class Msg:
     none_subscribes = "נראה שעדיין לא נרשמת לאזור כלשהוא. תוכל להרשם לאזורך על ידי פקודת /add."
     not_subscribe = "אינך רשום לאזור זה."
     success_remove = "אזור זה הוסר מרשימת האזורים שלך."
+    repo_url = "https://github.com/david-lev/TsevaAdomBot"
+    bottun_link = "💬 קוד המקור של הבוט"
 
     help = "להלן הפקודות הנתמכות בבוט:\n\n" \
            "#️⃣ /add:\n" \
@@ -54,6 +56,7 @@ class Msg:
            "בוט זה נוצר על ידי " \
            "[Yeuda-By](t.me/m100achuzBots) && [David Lev](t.me/davidlev) מצוות " \
            "[רובוטריק](https://t.me/RobotTrick)."
+
 
     start = "hello"
 

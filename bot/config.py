@@ -91,9 +91,13 @@ def _list(_, msg: Message):
         user_obj = User.get(uid=uid)
         if not user_obj:
             msg.reply(Msg.none_subscribes)
-            return  # החזרת שגיאה במשתמש ללא רשומים
+            return  # החזרת שגיאה במשתמש לא רשום
 
         subs = [ar.name for ar in user_obj.area1]  # יצירת רשימה של איזורים רשומים
+
+    if not subs:
+        msg.reply(Msg.none_subscribes)
+        return  # החזרת שגיאה במשתמש ללא רשומים
 
     msg.reply(Msg.list_subscribes(subs))  # החזרת הודעה "רשימת מנויים"
 
@@ -104,6 +108,6 @@ def _help(_, msg: Message):
         Msg.help,
         # disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-            "💬 קוד המקור של הבוט", url="https://google.com"
+            Msg.bottun_link, url=Msg.repo_url
         )]])
     )  # החזרת הודעת עזרה
