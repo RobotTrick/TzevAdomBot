@@ -18,6 +18,12 @@ def _send(uid: int, area=None, time=None):
 def handler(list_alerts):
     for alert in list_alerts:
         area = alert["name"]
+
+        try:
+            _send(Msg.id_channel, area, alert["time"])
+        except:
+            pass
+
         with db_session:
             area_obj = Area.get(name=area)  # קבלת האובייקט מהמסד נתונים
             if area_obj:

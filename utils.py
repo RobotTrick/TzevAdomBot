@@ -33,26 +33,30 @@ class Msg:
     area_not_found = f"לא נמצאה עיר/אזור. תוכלו למצוא את רשימת הערים [כאן]({_areas_url})."
     success_config = "נרשמת בהצלחה לקבלת התראות צבע אדום לאזור: **{}**. בשורות טובות."
     _info_url = "https://www.oref.org.il/12487-15894-he/Pakar.aspx"  # הוראות פיקוד העורף
-    alarms = "🛑 אזעקת צבע אדום כעת באזורך: **{}**. \n\nיש לכם **{}** כדי להגיע למרחב המוגן.\nלמידע  הכנסו לאתר " \
+    alarms = "🛑 אזעקת צבע אדום כעת באזורך: **{}**. \n\nזמן הגעה למרחב מוגן: **{}.**\nלמידע  הכנסו ל[אתר " \
              f"פיקוד העורף]({_info_url}). "
     none_subscribes = "נראה שעדיין לא נרשמת לאזור כלשהוא. תוכל להרשם לאזורך על ידי פקודת /add."
     not_subscribe = "אינך רשום לאזור זה."
     success_remove = "אזור זה הוסר מרשימת האזורים שלך."
     repo_url = "https://github.com/RobotTrick/TzevAdomBot"
     button_link = "💬 קוד המקור של הבוט"
+    id_channel = -1001396042264
 
     help = "להלן הפקודות הנתמכות בבוט:\n\n" \
-           "#️⃣ /add:\n" \
+           "☑️ /add\n" \
            "משמש להוספת אזור/עיר לרשימת האזורים שלך. השימוש בפקודה מתבצע באמצעות שליחת הפקודה יחד עם שם האזור. " \
            "לדוגמה:\n" \
            "`/add ירושלים - מזרח, מרכז ומערב`\n" \
            f"\nשימו לב שהבוט מקבל אך ורק שמות מדויקים, מתוך הרשימה המופיעה [כאן]({_areas_url}). אנחנו ממליצים להכנס " \
            f"לרשימה, לעשות חיפוש בדף (דרך דפדפן Chrome), ולוודא שיש ברשימה את השם המדויק.\n\n" \
-           "#️⃣ /remove:\n" \
+           "☑️ /remove\n" \
            "הסרת אזור מרשימת האזורים שלך. אופן השימוש בפקודה הוא בדומה לפקודת /add:\n" \
            "`/remove ירושלים - מזרח, מרכז ומערב`\n\n" \
-           "#️⃣ /list:" \
+           "☑️ /list" \
            "\nרשימת כל האזורים שהנך רשום/ה לקבלת התראות עליהם.\n\n" \
+           "הצטרפו לערוץ ההתראות על מנת לקבל התראות מכל חלקי הארץ - T.me/TzevAdomChannel\n\n" \
+           "שימו לב כי אנו מסירים מאיתנו כל אחריות שתיגרם מנזקים באי תפקוד חלקי או מלא של הבוט עקב בעיה בשרתים ו/או " \
+           "מגבלות הפצה של טלגרם.\n\n" \
            "בוט זה נוצר על ידי " \
            "[Yeuda-By](t.me/m100achuzBots) && [David Lev](t.me/davidlev) מצוות " \
            "[רובוטריק](https://t.me/RobotTrick)."
