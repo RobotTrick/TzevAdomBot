@@ -1,10 +1,8 @@
 from pyrogram import Client
 from utils import Msg, Area, db_session
 
-app = Client("_alaramSession")
 
-
-def _send(uid: int, area=None, time=None):
+def _send(app: Client, uid: int, area=None, time=None):
     with app:
         try:
             app.send_message(
@@ -15,12 +13,12 @@ def _send(uid: int, area=None, time=None):
             pass
 
 
-def handler(list_alerts):
+def _handler(list_alerts, app: Client):
     for alert in list_alerts:
         area = alert["name"]
 
         try:
-            _send(Msg.id_channel, area, alert["time"])
+            _send(app, Msg.id_channel, area, alert["time"])
         except:
             pass
 
@@ -28,4 +26,4 @@ def handler(list_alerts):
             area_obj = Area.get(name=area)  # קבלת האובייקט מהמסד נתונים
             if area_obj:
                 for user in area_obj.get_users():  # לולאה על המנויים לאזור זה
-                    _send(user, area, alert["time"])  # שליחת ההתראה
+                    _send(app, user, area, alert["time"])  # שליחת ההתראה

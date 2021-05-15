@@ -5,9 +5,13 @@
 from pyrogram import Client
 from tzevaadom import tzevaadom
 
-from bot.listener import handler
+from bot.listener import _handler
 
 if __name__ == '__main__':
     app = Client("TzevAdom", plugins=dict(root="bot"))
+
+    def handler(list_alert):
+        _handler(list_alert, app)
+
     tzevaadom.alerts_listener(handler)  # הרצת ה"האזנה לאזעקות"
     app.run()  # הרצת הבוט
