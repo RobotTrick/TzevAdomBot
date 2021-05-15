@@ -1,6 +1,12 @@
 config.ini
+
 .idea
-tzevAdom.sqlite
+
+*.sqlite
+
 *.session
+*.session-journal
+
 venv
+
 *.pyc
