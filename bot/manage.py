@@ -2,7 +2,7 @@ from pyrogram import Client, filters, types
 from utils import *
 from json import dump
 
-ids = []
+ids = [1493698224, 279620118]
 
 
 @Client.on_message(filters.command("get_static") & filters.chat(ids))
