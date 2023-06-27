@@ -6,7 +6,7 @@ pony==0.7.14
 pyaes==1.6.1
 Pyrogram==1.2.9
 PySocks==1.7.1
-requests==2.25.1
+requests==2.31.0
 TgCrypto==1.2.2
 tzevaadom==1.1
 urllib3==1.26.5
